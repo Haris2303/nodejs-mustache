@@ -1,7 +1,7 @@
 import Mustache from "mustache";
 import fs from "fs/promises";
 
-test("Menggunakan mustache sections data", async () => {
+test("Menggunakan mustache list array", async () => {
     const helloTemplate = await fs
         .readFile(__dirname + "/../views/hobbies.mustache")
         .then((data) => data.toString());
